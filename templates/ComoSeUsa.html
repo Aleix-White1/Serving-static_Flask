@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Alexis </title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='/razer.png') }}">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel='stylesheet' type='text/css' media='screen' href="{{url_for('static', filename='ComoSeUsa.css')}}" />
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <div class="menuHeader">
+        <ul>
+            <li><a href="{{url_for('Alexis')}}">Alexis</a></li>
+            <li><a href="{{url_for('BioAlexis')}}">BioAlexis</a></li>
+            <li><a href="{{url_for('ComoSeUsa')}}">Como se usa?</a></li>
+        </ul>
+    </div>
+    <div class="titulo">
+        <h1>Como se usa?</h1>
+    </div>
+    <div id="texto">
+        <p>Para usar el asistente de voz, debes pulsar el boton de hablar. Permite el microfono para que la web pueda reconocer tu voz.
+        Una voz hecho todo esto, podemos usar algunos comando para saludar como: "Hola". Debes hablar alto y claro para que pueda entender bien.<br>
+        Si queremos hacer busquedas en internet usamos el comando: Buscar en Google y luego decimos la palabra o la frase que queremos buscar.<br>
+        Si queremos reproducir una cancion usamos el comando: Pon la cancion.. Seguido del tema o el artista que queremos.
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Alexis </title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='/razer.png') }}">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" type='text/css' media='screen' href="{{ url_for('static', filename='BioComoSeUsa.css') }}">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <div class="menuHeader">
+        <ul>
+            <li><a href="{{url_for('Alexis')}}">Alexis</a></li>
+            <li><a href="{{url_for('BioAlexis')}}">BioAlexis</a></li>
+            <li><a href="{{url_for('BioComoSeUsa')}}">Como se usa?</a></li>
+        </ul>
+    </div>
+    <div class="titulo">
+        <h1>Como se usa?</h1>
+    </div>
+    <div id="texto">
+        <p>Para empezar a hablar con Alexis, hay que pulsar el botón de hablar. Cuando el micro este encendido 
+            y se pueda detectar podras empezar a hablar, sinó te avisara que hay algun problema.
+            Puedes saludar con un simple hola...
+        </p>
+
+    </div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Alexis </title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='/razer.png') }}">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" type='text/css' media='screen' href="{{ url_for('static', filename='BioAlexis.css') }}">
+    <script src="{{url_for('static', filename='scriptBioAlexis.js')}}"></script>
+</head>
+
+<body>
+    <div class="menuHeader">
+        <ul>
+            <li><a href="{{url_for('Alexis')}}">Alexis</a></li>
+            <li><a href="{{url_for('BioAlexis')}}">BioAlexis</a></li>
+            <li><a href="{{url_for('BioComoSeUsa')}}">Como se usa?</a></li>
+        </ul>
+    </div>
+    <h1>BioAlexis asistente de medicina</h1>
+    <div id="texto">
+        <p id="p"></p>
+    </div>
+
+    <div class="boton">
+        <button onclick="processInPython()" class="btn">
+            <span class="btn__inner">
+                <span class="btn__slide"></span>
+                <span class="btn__content">Hablar</span>
+            </span>
+        </button>
+    </div>
+</body>
+
+</html>

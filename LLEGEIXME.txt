@@ -1,0 +1,128 @@
+To run SERVER-SIDE:
+	1) PYTHON:
+	Python server-side code, you'll need to use a Python web framework. You can find out how to use the Django framework by reading Django Web Framework (Python). Flask is also a good (slightly less heavyweight) alternative to Django. To run this you'll need to install Python/PIP, then install Flask using pip3 install flask. At this point you should be able to run the Python Flask examples using for example python3 python-example.py, then navigating to localhost:5000 in your browser.
+		a) Django: +complex
+		b) Flask: +easy <<<
+	
+To run SERVER-SIDE:
+	2) JAVASCRIPT->NODE.JS: 
+	Node.js (JavaScript) server-side code, you'll need to use raw node or a framework built on top of it. 
+	Express is a good choice — see Express Web Framework (Node.js/JavaScript).
+	
+To run SERVER-SIDE:
+	3) PHP:
+	server-side code, launch PHP's built-in development server:
+	$ cd path/to/your/php/code
+	$ php -S localhost:8000
+	
+
+##### INSTALACIO LIGHT PYTHON-SERVER-> FLASK ####
+
+https://phoenixnap.com/kb/install-flask
+Step 1: Install Virtual Environment
+	Install virtualenv on Windows
+	1. Open the command line CMD with administrator privileges.
+
+	2. Use pip to install virtualenv on Windows:
+		
+		py -2 -m pip install virtualenv
+	
+Step 2: Create an Environment
+	1. Make a separate directory for your project:
+
+		mkdir <project name>
+		
+	2. Move into the directory:
+
+		cd <project name>
+		
+	3. Within the directory, create the virtual environment for Flask. When you create the environment, a new folder appears in your project directory with the environment’s name.
+		Create an Environment in Windows:
+		
+		For Python 3:
+		Create and name a virtual environment in Python 3 with:
+
+		py -3 -m venv <name of environment>
+		
+		For Python 2:
+		For Python 2, create the virtual environment with the virtualenv module:
+
+		py -2 -m virtualenv <name of environment>
+		
+		List the folder structure using the dir command:
+
+		dir *<project name>*
+		
+		The project directory shows the newly created environment.
+		
+Step 3: Activate the Environment
+		Activate the Environment on Windows
+		For Windows, activate the virtual environment with:
+
+		<name of environment>\Scripts\activate
+		
+Step 4: Install Flask
+		Install Flask within the activated environment using pip:
+	
+		pip install Flask
+		
+Step 5: Test the Development Environment
+		1. Create a simple Flask application to test the newly created development environment.
+
+		2. Make a file in the Flask project folder called "hello.py"
+
+		3. Edit the file using a text editor and add the following code to make an application that prints “Hello world!”:
+
+			from flask import Flask
+			app = Flask(__name__)
+			@app.route('/')
+			def hello_world():
+				return 'Hello world!'
+			
+			Note: Pick any name for the project (like "hello.py") except "flask.py". The Flask library is in a flask.py file.
+
+		4. Save the file and close.
+
+		5. Using the console, navigate to the project folder using the cd command.
+
+		6. Set the FLASK_APP environment variable.
+		For Windows:
+		
+			setx FLASK_APP "hello.py"
+		
+			Note: Windows users must RESTART the CONSOLE to set the environment variable.
+		
+		7. Run the Flask application with:
+				
+			RESTART CMD AS ADMIN
+			cd C:\1-TEST-BOX\TESTPROJECT
+			vtestproject\Scripts\activate
+			
+			flask run
+			
+			Running on http://127.0.0.1:5000/
+
+##### CODI EXECUTAT :
+
+1) CMD as Admin
+2) >py -2 -m pip install virtualenv   #INSTALA USANT LA VERSIO DE PYTHON 2.7 (OBSOLETA AL GENER-2020)
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support pip 21.0 will remove support for this functionality.
+	...
+  WARNING: The script virtualenv.exe is installed in 'C:\Users\<username>\AppData\Roaming\Python\Scripts' which is not on PATH.   <<<<<<<<<<<<!!!!!!!!
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  
+Successfully installed appdirs-1.4.4 contextlib2-0.6.0.post1 distlib-0.3.1 filelock-3.0.12 importlib-metadata-2.1.1 importlib-resources-3.3.1 pathlib2-2.3.5 scandir-1.10.0 typing-3.7.4.3 virtualenv-20.4.3 zipp-1.2.0
+WARNING: You are using pip version 20.3.3; however, version 20.3.4 is available.
+You should consider upgrading via the 'C:\Program Files\Python27\python.exe -m pip install --upgrade pip' command.
+
+3)#Versió Python 2.7:
+cd C:\1-TEST-BOX
+mkdir TESTPROJECT
+cd TESTPROJECT
+### Nota: PER ELIMINAR EL VIRUTALENV: fer que no sigui actiu (vtestproject\Scripts\deactivate) i eliminar la carpeta completament.
+py -2 -m virtualenv vtestproject
+dir *testproject*
+vtestproject\Scripts\activate
+pip install Flask  #S'installa dins de l'entorn, és a dir, dins de la carpeta "vtestproject"
+
+

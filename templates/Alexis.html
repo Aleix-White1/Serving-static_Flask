@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Alexis </title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='/razer.png') }}">
+    <link rel='stylesheet' type='text/css' media='screen' href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <link rel='stylesheet' type='text/css' href="{{ url_for('static', filename='main.css')}}">
+    <script src="{{url_for('static', filename='scriptAlexis.js')}}">/*src="{{url_for('static', filename='scriptAlexis.js')}}"*/
+    </script>
+
+</head>
+
+<body>
+    <div class="menuHeader">
+        <ul>
+            <li><a href="{{url_for('Alexis')}}">Alexis</a></li>
+            <li><a href="{{url_for('BioAlexis')}}">BioAlexis</a></li>
+            <li><a href="{{url_for('ComoSeUsa')}}">Como se usa?</a></li>
+        </ul>
+    </div>
+    <div id="glassmorphism">
+        <div class="titulo">
+            <h1>Alexis el asistente virtual</h1>
+        </div>
+        <div id="texto">
+            <p id="p"><span></span>
+        </div>
+        <div class="boton">
+            <button onclick="processInPython()" id="entradaPerPython" class="btn btn--light">
+                <span class="btn__inner">
+                    <span class="btn__slide"></span>
+                    <span class="btn__content">Hablar</span>
+                </span>
+            </button>
+        </div>
+    </div>  
+</body>
+</html>
